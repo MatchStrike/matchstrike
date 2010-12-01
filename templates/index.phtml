@@ -1,0 +1,12 @@
+{% extends "base.phtml" %}
+{% block title %}{{block.super}}: We build websites{% endblock %}
+{% block body_attributes %}id="home"{% endblock %}
+
+{% block content %}
+	<div id="intro">
+		<h2><strong>Strike up</strong> the web</h2>
+		<p>
+			Some call it skill. Some call it tireless perfectionism. We call it quality web development. <a href="{% url contact_us %}">Call us</a> with your idea today&mdash;it could be a reality next week.
+		</p>
+	</div>
+{% endblock %}

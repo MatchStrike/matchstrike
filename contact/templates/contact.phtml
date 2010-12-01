@@ -1,0 +1,24 @@
+{% extends "secondary.phtml" %}
+{% block title %}{{block.super}}: Contact Us. We love you.{% endblock %}
+{% block body_attributes %}id="secondary"{% endblock %}
+{% block meta_description %}Contact us at (407) 588 - SITE or by e-mail at info@matchstrike.net.{% endblock %}
+
+{% block secondary_content %}
+		<h2><strong>Contact Us</strong></h2>
+		<form action="" method="post" id="contact_form">
+			<fieldset>
+				<div id="email">
+					{{ form.email.label_tag}}
+					{{ form.email.errors }}
+					{{ form.email }}
+				</div>
+				<div id="message">
+					{{ form.message.label_tag }}
+					{{ form.message.errors }}
+					{{ form.message }}
+				</div>
+			</fieldset>
+			{% csrf_token %}
+			<p><input type="submit" value="Send message" /></p>
+		</form>
+{% endblock %}

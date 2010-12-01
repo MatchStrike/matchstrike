@@ -1,0 +1,6 @@
+*.pyc
+*.db
+*.log
+assets/css/*.r*.css
+assets/js/*.r*.js
+local_settings.py

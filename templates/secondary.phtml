@@ -1,0 +1,18 @@
+{% extends "base.phtml" %}
+
+{% block content %}
+		<div id="focus">
+			{%block secondary_content%}{% endblock %}
+		</div>
+		{% block sidebar%}
+		<div id="aside">
+			<h2>Contact Us</h2>
+			<ul>
+				<li class="email"><h3>E-mail</h3><p><a href="mailto:info@matchstrike.net">info@matchstrike.net</a></p></li>
+				<li class="call"><h3>Phone</h3><p>(407) 588 - 7483</p></li>
+				<li class="contact_form"><h3>Form</h3><p><a href="{% url contact_us %}">Our handy form</a></p></li>
+			</ul>
+			<p>We're available over the phone during standard business hours, EST. Feel free to e-mail us any time, though. We look forward to talking about your next project.</p>
+		</div>
+		{% endblock %}
+{% endblock %}

@@ -1,0 +1,3 @@
+html body #related_content .scrollable .items div h3 {font-size: 10px; background: url('../img/carousel_item_default.png') no-repeat;}
+html body #related_content .scrollable .items .fedorable h3 {  background: url('../img/carousel_item_fedorable.png') no-repeat;}
+html body #related_content .scrollable .items .tweet h3 {  background: url('../img/carousel_item_twitter.png') no-repeat;}

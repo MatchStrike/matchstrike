@@ -1,0 +1,13 @@
+{% load twitter_tags %}
+{% for type, recent_event in recent_events %}
+	{% ifequal type "tweet" %}<li class="tweet" id="time{{recent_event.pub_time|date:"U"}}">{% endifequal %}{% ifequal type "bookmark" %}{% ifequal recent_event.tags "matchstrike project" %}<li class="project" id="time{{recent_event.saved_date|date:"U"}}">{% else %}{% ifequal recent_event.tags "fedorable" %}<li class="fedorable" id="time{{recent_event.saved_date|date:"U"}}">{% else %}{% ifequal recent_event.tags "blog matchstrike" %}<li class="blog" id="time{{recent_event.saved_date|date:"U"}}">{% else %}<li class="bookmark"  id="time{{recent_event.saved_date|date:"U"}}">{% endifequal %}{% endifequal %}{% endifequal %}{% endifequal %}
+		{% ifequal type "tweet" %}
+			<h3><a href="http://twitter.com/{{recent_event.user}}">@{{recent_event.user}}</a> said:</h3>
+			<p>{{recent_event.text|twitterize}}</p>
+		{% endifequal %}
+		{% ifequal type "bookmark" %}
+			<h3><a href="{{recent_event.url}}">{% ifequal recent_event.tags "matchstrike project" %}Project: {% else %}{% ifequal recent_event.tags "fedorable" %}Fedorable: {% else %}{% ifequal recent_event.tags "blog matchstrike" %}StrikePad: {% else %}Bookmark: {% endifequal %}{% endifequal %}{% endifequal %}{{recent_event|truncatewords:6}}</a></h3>
+			<p>{{recent_event.extended_info|truncatewords:25}}</p>
+		{% endifequal %}
+	</li>
+{% endfor %}

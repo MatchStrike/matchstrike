@@ -1,0 +1,14 @@
+{% extends "secondary.phtml" %}
+{% block title %}{{block.super}}: 404 File Not Found{% endblock %}
+{% block body_attributes %}id="secondary"{% endblock %}
+{% block meta_description %}404 File Not Found.{% endblock %}
+
+{% block secondary_content %}
+			<h2>404 <strong>File Not Found</strong></h2>
+			<p>
+				I tried really, really hard, but I just couldn't find the file you were looking for. If you're sure it should be here, try <a href="{% url contact_us %}">contacting my human caretakers</a>. Maybe they can help.
+			</p>
+			<p>
+				If you're the quiet type, you could also <a href="http://www.google.com/#hl=en&amp;q=site%3Amatchstrike.net">try searching for it</a>.
+			</p>
+{% endblock %}

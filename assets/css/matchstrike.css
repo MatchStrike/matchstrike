@@ -1,0 +1,92 @@
+body { background: url('../img/bg.png') center 162px; font: 10px arial,sans-serif; color: #fff; text-align: center; margin: 0; padding: 0; position: relative;}
+
+h1 a { text-indent: -9999px; font-size: 0; }
+
+#primary_content h2 { font-size: 5.2em; margin: 0; padding: 0; color: #ffffdd; letter-spacing: -.05em; font-weight: bold;}
+#primary_content p { font-family: Verdana; font-size: 1.8em; line-height: 2.3em;}
+#primary_content a { color: #ffde45; text-decoration: none; }
+#primary_content h2 strong { padding: 7px 35px; margin: -7px -35px; background: url('../img/underline1.gif') center bottom no-repeat; font-weight: inherit;}
+#primary_content p strong { background: url('../img/small_outline1.gif') center center no-repeat; position:relative; padding: 40px; margin: -40px; font-weight: bold; z-index:-1;}
+
+#navigation { list-style-type: none;  font-size: 2.2em;}
+#navigation li { padding: 0 10px; display: inline;}
+#navigation a { color: #ffffff; background: none; padding: 0; margin: 0; text-decoration:none; letter-spacing: -.01em; font-weight:bold;}
+#navigation a:hover { color: #ffde45; border-top: 3px solid #ffde45;}
+
+#related_content { width: 900px; margin: 20px auto 0 auto; text-align: left;}
+#related_content h2 { font-size: 0; height: 0; width: 0;  position: absolute; margin: 0; text-indent: -9999px;}
+#related_content ul { width: 65%; margin: 0; padding: 0; list-style-type: none;}
+#related_content ul li { float: left; width: 33%;}
+
+/* Index */
+#home h1 { height: 0; width:0; position: absolute; top: 0; left: 0; font-size: 0; margin: 0; padding: 0; text-indent: -9999px;}
+
+#home #navigation { width: 820px; margin: 30px auto 0 auto; padding: 0 0 18px 0; text-align: right;}
+
+#home #primary_content { text-align: left; background:url('../img/strip.png') center center repeat-x;}
+
+#home #primary_content #intro { width: 820px; height: 487px; margin: 0 auto; padding: 0; background:url('../img/banner.jpg') 533px 36px no-repeat;}
+#home #primary_content #intro h2 { padding-top: 90px;}
+#intro * { width: 65%; }
+#intro a {}
+
+/* Content Pages */
+#secondary { margin: 0; padding: 0;}
+
+#secondary h1 { margin: 0; padding: 0; z-index: 2; position: relative; width: 820px; margin: 0 auto; padding: 14px 0 0 0; }
+#secondary h1 a { display: block; width: 183px; height: 75px; background: url('../img/logo1.png') no-repeat; float: left;}
+
+#secondary h2 strong { padding: 7px 35px; margin: -7px -35px; background: url('../img/underline2.gif') center bottom no-repeat; font-weight: inherit;}
+
+#secondary #navigation { z-index: 1; background: url('../img/strip-upper.png') 62px 1px repeat-x; position: absolute; top: 0; left: 0; width: 100%; margin: 0; padding: 30px 0 50px 0; }
+#secondary #navigation li { display: block; width: 361px; margin: 0 auto; padding: 0 0 0 450px; z-index: 100;}
+#secondary #navigation li a { float: left; display: block; padding: 3px 0 0 0; margin: 0 0 0 20px; position: relative; z-index:10;}
+#secondary #navigation li a:hover { padding-top: 0;}
+
+#secondary #primary_content { margin: 150px auto 50px auto; width: 820px; text-align: left;}
+#secondary #primary_content #focus { float: left; width: 65%;}
+
+#contact_form { font-size: 1.8em;}
+#contact_form .errorlist { color: #ffffaa;}
+#contact_form p { margin: 0; padding: 0; line-height: 1em; width: 85%;}
+#contact_form p input {float: right; margin: 10px 0;}
+#contact_form fieldset {border: none; padding: 15px 0 0 0;}
+#contact_form label {display: block; margin: 10px 0;}
+#contact_form fieldset input, textarea { background: url('../img/white.png'); width: 80%; margin: 10px 0; font-size: 1.0em; padding: 10px;}
+#contact_form fieldset textarea { height: 400px;}
+#contact_form fieldset textarea:focus { background:#ddd;}
+#contact_form fieldset input:focus { background:#ddd;}
+
+#secondary #aside { float:right; width:240px; padding:0 20px; font-size:16px; line-height:16px;}
+#secondary #aside h2 { font-size:30px; padding: 22px 0 0 0; margin:0 0 22px 0; visibility:hidden;}
+#secondary #aside h3 { font-size:24px; padding: 0 0 0 0; margin:0 0 8px 0;}
+#secondary #aside ul { list-style-type:none; padding:0 0 1em 1em;}
+#secondary #aside ul li { padding:0; margin:0 0 16px 0;}
+#secondary #aside ul li p { margin:0;}
+#secondary #aside p { font-size: 12px; line-height: 20px; padding: 0 0 0 17px;}
+
+#secondary #related_content {clear: both; padding-top: 40px;}
+
+
+/* Scrollable */
+div.scrollable { position: relative; float: left; overflow: hidden; width: 838px; height: 230px; padding:0 0 50px 0; } 
+#related_content a.nextPage { text-indent:-9999px; cursor:pointer; display:block; float:left; width:30px; height: 30px; margin: 110px 0 0 0; background: url('../img/arrows.gif') -30px 0;}
+#related_content a.nextPage:hover { background-position: -90px 0;}
+#related_content a.prevPage { text-indent:-9999px; cursor:pointer; display:block; float:left; width:30px; height: 30px; margin: 110px 0 0 0; background: url('../img/arrows.gif') 0 0;}
+#related_content a.prevPage:hover { background-position: -60px 0;}
+
+div .scrollable .items { width:20000em; position:absolute;}
+div .scrollable .items div { float:left; width: 276px; height: 250px; overflow:hidden; background: url('../img/carousel_item_bg.png') no-repeat;}
+div .scrollable .items h3 { font-size: 10px; background: url('../img/carousel_item_header.png') no-repeat 0px -148px; height: 66px; display: block; padding: 8px 25px 0 78px; margin: 8px 0 0 11px;}
+div .scrollable .items .fedorable h3 { background-position: 0px -74px;}
+div .scrollable .items .tweet h3 { background-position: 0px 0px; padding-top: 27px; padding-left: 88px; height: 47px;} 
+div .scrollable .items h3 a { color: #ffffdd; text-decoration:none; font-size:1.5em;}
+div .scrollable .items h3 a:hover { color: #ffde45;}
+div .scrollable .items p { font-size:1.5em; padding: 0 25px;}
+div .scrollable .items p a{ color:#ffde45; text-decoration:none;}
+ul .items {visibility:hidden;}
+
+#footer { clear: both; font-size: 130%; text-align: left; margin: 0 auto; padding: 0 0 0 40px; width: 900px; color: #999;}
+#footer .first { list-style-type: none;}
+#footer li { float: left; margin: 0 0 0 25px; padding: 0 0 30px 0;}
+#footer a  { color: #ab952e; text-decoration: none; }
