@@ -48,6 +48,7 @@ INSTALLED_APPS = (
 	'contact',
 	'social',
 	'gunicorn',
+	'sentry.client'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

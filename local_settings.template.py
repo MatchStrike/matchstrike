@@ -76,6 +76,11 @@ COMPRESS = True
 COMPRESS_VERSION = True
 COMPRESS_AUTO = DEBUG # only on dev. use manage.py synccompress on production
 
+# Django Sentry
+SENTRY_REMOTE_URL = 'https://xxxxxxxxxx//sentry/store/'
+SENTRY_KEY = 'xxxxxxxxxxxx'
+
+
 # Add the debug toolbar if in debug mode
 #if DEBUG == True:
 #	MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES+('debug_toolbar.middleware.DebugToolbarMiddleware',)

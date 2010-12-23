@@ -11,3 +11,4 @@ flickrapi
 PIL>=1.1.6
 MySQL-python
 gunicorn
+django-sentry
