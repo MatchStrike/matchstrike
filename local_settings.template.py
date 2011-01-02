@@ -1,4 +1,7 @@
+import logging
 import os
+
+from sentry.client.handlers import SentryHandler
 
 # Cache Config
 CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
@@ -77,9 +80,18 @@ COMPRESS_VERSION = True
 COMPRESS_AUTO = DEBUG # only on dev. use manage.py synccompress on production
 
 # Django Sentry
-SENTRY_REMOTE_URL = 'https://xxxxxxxxxx//sentry/store/'
+SENTRY_REMOTE_URL = 'https://xxxxxxxxxx/sentry/store/'
 SENTRY_KEY = 'xxxxxxxxxxxx'
 
+logger = logging.getLogger()
+# ensure we havent already registered the handler
+if SentryHandler not in map(lambda x: x.__class__, logger.handlers):
+	logger.addHandler(SentryHandler())
+
+	# Add StreamHandler to sentry's default so you can catch missed exceptions
+	logger = logging.getLogger('sentry.errors')
+	logger.propagate = False
+	logger.addHandler(logging.StreamHandler())
 
 # Add the debug toolbar if in debug mode
 #if DEBUG == True:
