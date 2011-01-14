@@ -39,7 +39,7 @@ h1 a { text-indent: -9999px; font-size: 0; }
 #secondary h2 strong { padding: 7px 35px; margin: -7px -35px; background: url('../img/underline2.gif') center bottom no-repeat; font-weight: inherit;}
 
 #secondary #navigation { z-index: 1; background: url('../img/strip-upper.png') 62px 1px repeat-x; position: absolute; top: 0; left: 0; width: 100%; margin: 0; padding: 30px 0 50px 0; }
-#secondary #navigation li { display: block; width: 361px; margin: 0 auto; padding: 0 0 0 450px; z-index: 100;}
+#secondary #navigation li { display: block; width: 361px; margin: 0 auto; padding: 0 0 0 528px; z-index: 100;}
 #secondary #navigation li a { float: left; display: block; padding: 3px 0 0 0; margin: 0 0 0 20px; position: relative; z-index:10;}
 #secondary #navigation li a:hover { padding-top: 0;}
 
@@ -65,7 +65,63 @@ h1 a { text-indent: -9999px; font-size: 0; }
 #secondary #aside ul li p { margin:0;}
 #secondary #aside p { font-size: 12px; line-height: 20px; padding: 0 0 0 17px;}
 
-#secondary #related_content {clear: both; padding-top: 40px;}
+#secondary #related_content { clear: both; padding-top: 40px;}
+
+#secondary .show_container { position:relative;}
+
+#secondary .workshow { height:388px; overflow:hidden; position:relative; margin-bottom:36px;}
+#secondary .workslide { height:388px; overflow:hidden; clear:both;}
+#secondary .workshow h3 { font-size:22px; margin:2px 0px 5px 0px;float:left; }
+#secondary .workshow p { font-size:12px; line-height:1.5em; display:block; float:left; width:252px;}
+
+#secondary .featurelink { float:left; margin-right:14px; width:544px; height:388px; display:block; text-indent:-9999px; font-size:0; line-height:0;}
+
+#secondary .atlibs a.atlibs1 { background-image: url('../img/atlibs1.jpg');}
+#secondary .atlibs a.atlibs2 { background-image: url('../img/atlibs2.jpg');}
+#secondary .atlibs a.atlibs3 { background-image: url('../img/atlibs3.jpg');}
+
+#secondary .hootcourse a.hootcourse1 { background-image: url('../img/hootcourse1.jpg');}
+#secondary .hootcourse a.hootcourse2 { background-image: url('../img/hootcourse2.jpg');}
+#secondary .hootcourse a.hootcourse3 { background-image: url('../img/hootcourse3.jpg');}
+
+#secondary .happo a.happo1 { background-image: url('../img/happo1.png');}
+#secondary .happo a.happo2 { background-image: url('../img/happo2.png');}
+#secondary .happo a.happo3 { background-image: url('../img/happo3.png');}
+
+#secondary .ppm a.ppm1 { background-image: url('../img/ppm1.png');}
+#secondary .ppm a.ppm2 { background-image: url('../img/ppm2.png');}
+#secondary .ppm a.ppm3 { background-image: url('../img/ppm3.jpg');}
+
+
+#secondary .show_nav { position:absolute; bottom:-17px; right:-5px; z-index:10; list-style-type:none;}
+#secondary .show_nav a:focus { outline:none;}
+#secondary .show_nav li { margin-bottom:7px; width:268px;}
+
+/* Thumbs are desauturated (lightness) with a guassian blur (radius 2px) on inactive pics */
+
+#secondary .thumb { display:block; background-position:bottom right; width:252px; height:63px; display:block; text-indent:-9999px; font-size:0; line-height:0;}
+
+#secondary #hootcourse_nav .hootcourse_thumb1 { background-image: url('../img/hootcourse1_small.png');}
+#secondary #hootcourse_nav .hootcourse_thumb2 { background-image: url('../img/hootcourse2_small.png');}
+#secondary #hootcourse_nav .hootcourse_thumb3 { background-image: url('../img/hootcourse3_small.png');}
+
+#secondary #atlibs_nav .atlibs_thumb1 { background-image: url('../img/atlibs1_small.png');}
+#secondary #atlibs_nav .atlibs_thumb2 { background-image: url('../img/atlibs2_small.png');}
+#secondary #atlibs_nav .atlibs_thumb3 { background-image: url('../img/atlibs3_small.png');}
+
+#secondary #happo_nav .happo_thumb1 { background-image: url('../img/happo1_small.png');}
+#secondary #happo_nav .happo_thumb2 { background-image: url('../img/happo2_small.png');}
+#secondary #happo_nav .happo_thumb3 { background-image: url('../img/happo3_small.png');}
+
+#secondary #ppm_nav .ppm_thumb1 { background-image: url('../img/ppm1_small.png');}
+#secondary #ppm_nav .ppm_thumb2 { background-image: url('../img/ppm2_small.png');}
+#secondary #ppm_nav .ppm_thumb3 { background-image: url('../img/ppm3_small.png');}
+
+
+
+#secondary .activeSlide { background: url('../img/arrows.gif') 253px center no-repeat;}
+#secondary .activeSlide a { background-position:top right;}
+
 
 
 /* Scrollable */

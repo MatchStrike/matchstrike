@@ -17,6 +17,51 @@ $(document).ready(function(){
 			api:true,
 			clickable: false
 	});
+	
+	$('.atlibs').cycle({ 
+	    fx:     'fade', 
+	    speed:  'fast', 
+	    timeout: 0, 
+	    pager:  '#atlibs_nav', 
+	    pagerAnchorBuilder: function(idx, slide) { 
+		// return selector string for existing anchor 
+		return '#atlibs_nav li:eq(' + idx + ') a'; 
+	    } 
+	});
+	
+	$('.hootcourse').cycle({ 
+	    fx:     'fade', 
+	    speed:  'fast', 
+	    timeout: 0, 
+	    pager:  '#hootcourse_nav', 
+	    pagerAnchorBuilder: function(idx, slide) { 
+		// return selector string for existing anchor 
+		return '#hootcourse_nav li:eq(' + idx + ') a'; 
+	    } 
+	});
+	
+	$('.happo').cycle({ 
+	    fx:     'fade', 
+	    speed:  'fast', 
+	    timeout: 0, 
+	    pager:  '#happo_nav', 
+	    pagerAnchorBuilder: function(idx, slide) { 
+		// return selector string for existing anchor 
+		return '#happo_nav li:eq(' + idx + ') a'; 
+	    } 
+	});
+
+	$('.ppm').cycle({ 
+	    fx:     'fade', 
+	    speed:  'fast', 
+	    timeout: 0, 
+	    pager:  '#ppm_nav', 
+	    pagerAnchorBuilder: function(idx, slide) { 
+		// return selector string for existing anchor 
+		return '#ppm_nav li:eq(' + idx + ') a'; 
+	    } 
+	});
+	
 	$.ga("UA-10208886-2");
 });
 

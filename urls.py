@@ -15,6 +15,7 @@ urlpatterns += patterns('',
 	url(r'^pricing/$', direct_to_template, {'template': 'pricing.phtml'}, name='pricing'),
 	url(r'^refer_us/$', direct_to_template, {'template': 'referrals.phtml'}, name='refer_us'),
 	url(r'^privacy/$', direct_to_template, {'template': 'privacy.phtml'}, name='privacy'),
+	url(r'^work/$', direct_to_template, {'template': 'work.phtml'}, name='work'),
 )
 
 # If we're debugging, expose the static assets, 404, and 500 error pages so we can test them without a prod setup:
