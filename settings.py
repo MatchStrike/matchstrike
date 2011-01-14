@@ -79,8 +79,10 @@ COMPRESS_JS = {
 		'source_filenames': (
 			'js/jquery.js',
 			'js/jquery.tools.min.js',
+			'js/jquery.cycle.min.js',
 			'js/googleAnalytics.js',
-			'js/matchstrike.js',),
+			'js/matchstrike.js',
+			),
 		'output_filename': 'js/matchstrike.r?.js',
 	},
 	'ie7': {
