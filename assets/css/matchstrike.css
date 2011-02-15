@@ -43,7 +43,7 @@ h1 a { text-indent: -9999px; font-size: 0; }
 #secondary #navigation li a { float: left; display: block; padding: 3px 0 0 0; margin: 0 0 0 20px; position: relative; z-index:10;}
 #secondary #navigation li a:hover { padding-top: 0;}
 
-#secondary #primary_content { margin: 150px auto 50px auto; width: 820px; text-align: left;}
+#secondary #primary_content { margin: 120px auto 50px auto; width: 820px; text-align: left;}
 #secondary #primary_content #focus { float: left; width: 65%;}
 
 #contact_form { font-size: 1.8em;}
@@ -67,7 +67,7 @@ h1 a { text-indent: -9999px; font-size: 0; }
 
 #secondary #related_content { clear: both; padding-top: 40px;}
 
-#secondary .show_container { position:relative;}
+#secondary .show_container { position:relative; }
 
 #secondary .workshow { height:388px; overflow:hidden; position:relative; margin-bottom:36px;}
 #secondary .workslide { height:388px; overflow:hidden; clear:both;}
