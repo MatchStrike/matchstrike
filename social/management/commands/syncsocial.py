@@ -32,7 +32,11 @@ class Command(BaseCommand):
 				if rate_limit_status.get('remaining_hits', 0) > 10:
 					for x in tweepy.Cursor(twt.user_timeline, since_id=last_tweet).items():
 						tweets_inserted = tweets_inserted + 1
-						save_tweet(x)				
+						save_tweet(x)
+				if rate_limit_status.get('remaining_hits', 0) > 10:
+					for x in tweepy.Cursor(twt.retweeted_by_me, since_id=last_tweet).items():
+						tweets_inserted = tweets_inserted + 1
+						save_tweet(x)
 				print "Success! %s tweets saved." % tweets_inserted
 			except:
 				print "An error occured while syncing Twitter data for '%s': %s %s" % (user['username'],exc_info()[0], exc_info()[1])
@@ -58,10 +62,14 @@ def get_tweet_user(tweet):
 def save_tweet(tweet):
 	new_tweet = Tweet()
 	
-	new_tweet.pub_time = tweet.created_at
 	new_tweet.twitter_id = tweet.id
-	new_tweet.user = get_tweet_user(tweet)
-	new_tweet.text = tweet.text
+	if getattr(tweet, 'retweeted_status', False):
+		new_tweet.pub_time = tweet.retweeted_status.created_at
+		new_tweet.user = get_tweet_user(tweet.retweeted_status)
+		new_tweet.text = tweet.retweeted_status.text
+	else:
+		new_tweet.pub_time = tweet.created_at
+		new_tweet.user = get_tweet_user(tweet)
+		new_tweet.text = tweet.text
 	
 	new_tweet.save()
-	
