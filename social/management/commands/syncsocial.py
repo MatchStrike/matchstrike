@@ -38,20 +38,6 @@ class Command(BaseCommand):
 				print "An error occured while syncing Twitter data for '%s': %s %s" % (user['username'],exc_info()[0], exc_info()[1])
 				print "Moving on..."
 			print ""
-			
-		# Get Delicious bookmarks
-		for user, password in getattr(settings,'DELICIOUS_USERS'):
-			try: 
-				print "Attempting to sync Delicious user data for '%s'..." % (user,)
-				d = DeliciousSyncr(user, password)
-				d.syncAll(tag="matchstrike")
-				d.syncAll(tag="fedorable")
-				print "Success!"
-			except:
-				print "An error occured while syncing Delicious data for '%s'." % (user,)
-				print "Moving on..."
-			print ""
-		print "Done syncing social data."
 
 def get_tweet_user(tweet):
 	try:
