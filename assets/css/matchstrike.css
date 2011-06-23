@@ -39,7 +39,7 @@ h1 a { text-indent: -9999px; font-size: 0; }
 #secondary h2 strong { padding: 7px 35px; margin: -7px -35px; background: url('../img/underline2.gif') center bottom no-repeat; font-weight: inherit;}
 
 #secondary #navigation { z-index: 1; background: url('../img/strip-upper.png') 62px 1px repeat-x; position: absolute; top: 0; left: 0; width: 100%; margin: 0; padding: 30px 0 50px 0; }
-#secondary #navigation li { display: block; width: 361px; margin: 0 auto; padding: 0 0 0 450px; z-index: 100;}
+#secondary #navigation li { display: block; width: 361px; margin: 0 auto; padding: 0 0 0 575px; z-index: 100;}
 #secondary #navigation li a { float: left; display: block; padding: 3px 0 0 0; margin: 0 0 0 20px; position: relative; z-index:10;}
 #secondary #navigation li a:hover { padding-top: 0;}
 
